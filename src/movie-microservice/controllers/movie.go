@@ -10,9 +10,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"../common"
-	"../daos"
-	"../models"
+	"movie-microservice/common"
+	"movie-microservice/daos"
+	"movie-microservice/models"
+
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/mgo.v2/bson"
