@@ -1,2 +1,30 @@
-[GIN] 2018/09/25 - 09:55:05 | 200 | 36.297965121s | 107.113.191.147 | POST     /api/v1/auth
-[GIN] 2018/09/25 - 09:55:33 | 401 |  9.026592488s | 107.113.191.147 | POST     /api/v1/auth
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/v1/admin/auth        --> user-microservice/controllers.(*User).Authenticate-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> user-microservice/controllers.(*User).AddUser-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/list        --> user-microservice/controllers.(*User).ListUsers-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/detail/:id  --> user-microservice/controllers.(*User).GetUserByID-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/            --> user-microservice/controllers.(*User).GetUserByParams-fm (4 handlers)
+[GIN-debug] DELETE /api/v1/users/:id         --> user-microservice/controllers.(*User).DeleteUserByID-fm (4 handlers)
+[GIN-debug] PATCH  /api/v1/users             --> user-microservice/controllers.(*User).UpdateUser-fm (4 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8808
+[GIN] 2022/04/17 - 20:37:53 | 404 |            0s |       127.0.0.1 | GET      "/api/v1/admin/auth"
+[GIN] 2022/04/17 - 20:37:54 | 404 |            0s |       127.0.0.1 | GET      "/favicon.ico"
+[GIN-debug] redirecting request 301: /api/v1/users/ --> /api/v1/users/
+[GIN] 2022/04/17 - 20:38:11 | 401 |            0s |       127.0.0.1 | GET      "/api/v1/users/"
+Error #01: no token present in request
+[GIN] 2022/04/17 - 20:38:23 | 404 |            0s |       127.0.0.1 | GET      "/swagger/"
+[GIN] 2022/04/17 - 20:39:36 | 200 |            0s |       127.0.0.1 | GET      "/swagger/index.html"
+[GIN] 2022/04/17 - 20:39:36 | 200 |            0s |       127.0.0.1 | GET      "/swagger/swagger-ui.css"
+[GIN] 2022/04/17 - 20:39:36 | 200 |      1.0018ms |       127.0.0.1 | GET      "/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2022/04/17 - 20:39:36 | 200 |      2.0121ms |       127.0.0.1 | GET      "/swagger/swagger-ui-bundle.js"
+[GIN] 2022/04/17 - 20:39:36 | 200 |            0s |       127.0.0.1 | GET      "/swagger/favicon-16x16.png"
+[GIN] 2022/04/17 - 20:39:36 | 200 |            0s |       127.0.0.1 | GET      "/swagger/doc.json"
+[GIN] 2022/04/17 - 20:42:17 | 200 |      1.0044ms |       127.0.0.1 | GET      "/swagger/doc.json"

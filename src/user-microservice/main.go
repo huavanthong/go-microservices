@@ -9,13 +9,15 @@ import (
 	"io"
 	"os"
 
-	"./common"
-	"./controllers"
-	"./databases"
+	"user-microservice/common"
+	"user-microservice/controllers"
+	"user-microservice/databases"
+
 	"github.com/gin-gonic/contrib/jwt"
 	"github.com/gin-gonic/gin"
 
-	_ "./docs"
+	_ "user-microservice/docs"
+
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
