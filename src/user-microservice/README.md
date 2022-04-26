@@ -8,6 +8,10 @@ to run this service
 > ./user-microservice.exe
 ```
 
+to execute API
+```
+curl -X POST http://127.0.0.1:8808/api/v1/admin/auth -F 'user=admin' -F 'password=admin'
+```
 
 ## Error knowledge
 ### Run swag init

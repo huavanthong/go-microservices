@@ -411,7 +411,7 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "107.113.53.47:8808",
+	Host:             "127.0.0.1:8808",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
 	Title:            "UserManagement Service API Document",

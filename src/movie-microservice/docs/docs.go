@@ -21,7 +21,7 @@ var doc = `{
         "license": {},
         "version": "1.0"
     },
-    "host": "107.113.53.47:8809",
+    "host": "127.0.0.1:8809",
     "basePath": "/api/v1",
     "paths": {
         "/login": {
